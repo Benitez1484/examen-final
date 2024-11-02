@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>{{titulo}}</title>
+</head> 
+<body>
+{{> header}}
+
+<div class="container">
+    <h1>Bienvenido a Vehículos de Carga</h1>
+    <p>Explora una variedad de vehículos de carga, diseñados para satisfacer las necesidades de transporte y logística. A continuación, te mostramos algunos tipos principales de vehículos utilizados en la industria.</p>
+
+    <!-- Sección inicial: dos tipos de vehículos de carga -->
+    <section class="main-vehicles">
+        <!-- Vehículo de Carga General -->
+        <div class="vehicle-card">
+            <img src="/img/camion.png" alt="Vehículo de Carga General">
+            <h3>Vehículos de Carga General</h3>
+            <p>Estos vehículos están diseñados para transportar mercancías de diferentes tipos, ofreciendo versatilidad y eficiencia en el transporte diario.</p>
+        </div>
+
+        <!-- Vehículo de Carga Pesada -->
+        <div class="vehicle-card">
+            <img src="/img/camion2.png" alt="Vehículo de Carga Pesada">
+            <h3>Vehículos de Carga Pesada</h3>
+            <p>Ideales para transportar grandes volúmenes y pesos, estos vehículos son esenciales en la construcción y en el transporte de maquinaria.</p>
+        </div>
+    </section>
+
+    <!-- Sección separada: otros tipos de vehículos (Eléctricos, Gasolina, Diesel) -->
+    <section class="other-vehicles">
+        <h2>Otros Tipos de Vehículos de Carga</h2>
+        <p>Conoce algunos otros tipos de vehículos especializados que destacan en eficiencia y funcionalidad.</p>
+        
+        <!-- Enlace a Eléctricos -->
+        <a href="/electricos" class="vehicle-card">
+            <img src="/img/electrico2.png" alt="Vehículo de Carga Eléctrico">
+            <h3>Vehículos de Carga Eléctricos</h3>
+        </a>
+
+        <!-- Enlace a Gasolina -->
+        <a href="/gasolina" class="vehicle-card">
+            <img src="/img/gasolina2.jpeg" alt="Vehículo de Carga de Gasolina">
+            <h3>Vehículos de Carga de Gasolina</h3>
+        </a>
+
+        <!-- Enlace a Diesel -->
+        <a href="/diesel" class="vehicle-card">
+            <img src="/img/diesel2.jpeg" alt="Vehículo de Carga Diesel">
+            <h3>Vehículos de Carga Diesel</h3>
+        </a>
+    </section>
+</div>
+
+{{> footer}}
+
+
+</body>
+</html>

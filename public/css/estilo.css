@@ -1,0 +1,451 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilos de encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Contenido de las páginas */
+h1, p {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+
+img {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+.social-media {
+    margin-top: 1em;
+}
+
+.social-media a {
+    margin: 0 0.5em;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0.5em;
+    }
+
+    footer p, footer .social-media {
+        font-size: 0.9em;
+    }
+}
+
+/* Contenedor del encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+/* Logo y Título */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Botón de menú para dispositivos móviles */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Menú de navegación */
+nav ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Muestra el botón de menú en móviles */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Oculta el menú en móviles por defecto */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1em;
+        background-color: #333;
+        padding: 1em;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Muestra el menú cuando se activa la clase */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Alineación vertical del logo y título en móviles */
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin: 1em auto;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .logo-container {
+        flex-direction: column;
+    }
+}
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Estilos para la sección de enlaces de vehículos */
+.vehicle-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.vehicle-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-10px);
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #333;
+}
+
+.vehicle-card h3 {
+    margin: 1em 0;
+    color: #333;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .vehicle-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehicle-card {
+        width: 80%;
+    }
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Sección de vehículos principales */
+.main-vehicles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.main-vehicles .vehicle-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.main-vehicles .vehicle-card:hover {
+    transform: translateY(-10px);
+}
+
+.main-vehicles .vehicle-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #333;
+}
+
+.main-vehicles .vehicle-card h3 {
+    margin: 1em 0;
+    color: #333;
+}
+
+/* Sección de otros vehículos */
+.other-vehicles {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.other-vehicles h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.other-vehicles p {
+    margin-bottom: 2em;
+    color: #666;
+}
+
+/* Estilos para la sección de enlaces de vehículos adicionales */
+.other-vehicles .vehicle-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 1em auto;
+}
+
+.other-vehicles .vehicle-card:hover {
+    transform: translateY(-10px);
+}
+
+.other-vehicles .vehicle-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #333;
+}
+
+.other-vehicles .vehicle-card h3 {
+    margin: 1em 0;
+    color: #333;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .main-vehicles,
+    .other-vehicles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehicle-card {
+        width: 80%;
+    }
+}
+/* Contenedor del video responsivo */
+/* Contenedor del video responsivo */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar este valor al ancho máximo deseado */
+    margin: 2em auto;
+    padding-top: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
