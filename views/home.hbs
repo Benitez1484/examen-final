@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>{{titulo}}</title>
+</head> 
+<body>
+{{>header}}
+
+<section id="inicio">
+    <div class="contenido">
+        <div class="fila">
+            <div class="col">
+                <div class="ui">{{nombre}}<span class="circulo"></span></div>
+                <div class="info"><h2>{{hola}} <br> {{umg}}</h2></div>
+                <div class="vertical txt">{{profesion}}</div>
+            </div>
+            <div class="col">
+                <div class="circulo-principal anim1"></div>
+                <img src="/img/principal.png" alt="Imagen Principal" class="anim2">
+            </div>
+            <div class="col derecha">
+                <h3>Especialización en Desarrollo de Soluciones Tecnológicas</h3>
+                <p>Me especializo en desarrollar sistemas robustos y escalables...</p>
+                <br>
+                <div class="botones">
+                    <a href="proyectos" class="btn-primary proyectos-btn">Proyectos</a>
+                    <a href="contactos" class="btn-secondary contacto-btn">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{>footer}}
+</body>
+</html>

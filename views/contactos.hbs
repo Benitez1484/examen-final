@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>{{titulo}}</title>
+</head> 
+<body>
+{{>header}}
+
+<section id="contacto">
+    <div class="contenido">
+        <div class="imagen-container">
+            <img src="/img/contacto.png" alt="Imagen de contacto" class="img-subs">
+        </div>
+        <form action="https://formsubmit.co/santosbenitez2017@gmail.com" method="POST">
+            <h2 class="titulo-seccion">Contáctame <br> <span class="resaltado subir">ahora mismo</span></h2>
+            <p>Por favor, completa el siguiente formulario para comunicarte conmigo. Te responderé lo antes posible.</p>
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+{{>footer}}
+</body>
+</html>
